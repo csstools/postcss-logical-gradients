@@ -1,0 +1,21 @@
+test-linear-gradient {
+	background-image: linear-gradient(90deg, yellow 0%, blue 100%);
+	&:dir(ltr) {
+	background-image: linear-gradient(to right, yellow 0%, blue 100%)
+	}
+	&:dir(rtl) {
+	background-image: linear-gradient(to left, yellow 0%, blue 100%)
+	}
+	&:dir(ltr) {
+	background-image: linear-gradient(to right bottom, yellow 0%, blue 100%)
+	}
+	&:dir(rtl) {
+	background-image: linear-gradient(to left bottom, yellow 0%, blue 100%)
+	}
+	&:dir(ltr) {
+	background-image: linear-gradient(to left top, yellow 0%, blue 100%)
+	}
+	&:dir(rtl) {
+	background-image: linear-gradient(to right top, yellow 0%, blue 100%)
+	}
+}
